@@ -4,6 +4,9 @@
   --blue-color: #003F88;
   --faint-text-color: #A0A3BD;
 }
+.body {
+  overflow-x: hidden;
+}
 
 #navigation {
   background-color: var(--blue-background) !important;
@@ -11,6 +14,16 @@
 .header-nav {
   padding: 0.5rem 0 !important;
   background-color: var(--blue-background);
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("images/th-solid.svg") !important;
+    color: #fff !important;
+  }
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:focus {
+  outline: 0 !important;
 }
 .stareview-logo {
   font-size: 2.3rem !important;
@@ -27,9 +40,12 @@
   padding: 10px 15px !important;
 }
 .sign-up {
-  background-color: var(--yellow-background);
+  background-color: var(--yellow-background) !important;
   color: var(--blue-background) !important;
-  border-radius: 2px;
+  border-radius: 2px !important;
+}
+.dropdown-menu {
+  width: fit-content !important;
 }
 .search-group {
   background-color: #fff !important;
@@ -244,7 +260,9 @@
 
 }
 
-@media (min-width: 300px) {
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 700px) {
   #best-services {
     padding: 4rem 1rem;
 }
@@ -257,5 +275,8 @@
   .carousel-control-next {
   opacity: 1 !important;
   left: 85% !important;
+}
+.num-review {
+  margin-left: 20px !important;
 }
 }
