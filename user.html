@@ -24,191 +24,24 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-4 active">
+            <li class="nav-item mr-5 active">
               <a href="reviews.html" class="nav-link">Write a review</a>
             </li>
             <li class="nav-item mr-4 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Log in
+                <img src="images/user.png" height="40px" width="40px" class="img-fluid"> Floyd Miles
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#individual-login"><i class="fas fa-user mr-2"></i>Individual Log in</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="fas fa-building mr-2"></i>Organization Log in</a>
+                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#individual-login"><i class="fas fa-user mr-2"></i>My profile</a>
+                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
+                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
               </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <button class="sign-up btn btn-secondary px-5" href="#" id="signupdropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Sign Up
-                <i class="fas fa-caret-down"></i>
-            </button>
-              <div class="dropdown-menu" aria-labelledby="signupdropdown">
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#individual-signup"><i class="fas fa-user mr-2"></i>Individual Sign Up</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-signup"><i class="fas fa-building mr-2"></i>Organization Sign Up</a>
-              </div>
-            </li>
           </ul>
         </div>
       </nav>
-
-      <!-- Login and SignUp  Modals-->
-
-      <!-- Individual Login Modal Starts-->
-      <div class="modal fade" id="individual-login" tabindex="-1" aria-labelledby="individual-login" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h2 class="heading text-center">Welcome to Stareview</h2>
-              <p class="blue-text text-center">You can sign in using your registered email address with Reviewstar</p>
-              <div class="px-5">
-                <form class="pt-3">
-                  <input type="email" class="form-control login-input" placeholder="Email address" id="individual-login-email">
-                  <input type="password" class="form-control login-input mt-4" placeholder="Password" id="individual-login-password">
-
-                  <div class="d-md-flex justify-content-between logged-in mt-2">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="individual-login-check">
-                      <label class="custom-control-label" for="individual-login-check">Keep me logged in</label>
-                    </div>
-
-                    <div><a href="#">Forgot password?</a></div>
-                  </div>
-
-                  <button type="submit" class="btn login-btn my-3"><a href="user.html">Log in</a></button>
-                </form>
-
-                <p class="no-account mb-1">Don't have an account? <a href="#" class="blue-text">Sign up</a></p>
-                <p class="no-account ">Register your organisation? <a href="#" class="blue-text">Get Listed</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Individual Login Modal Ends-->
-
-
-      <!-- Organizational Login Modal Starts-->
-      <div class="modal fade" id="organization-login" tabindex="-1" aria-labelledby="organization-login" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h2 class="heading text-center">Welcome to Stareview</h2>
-              <p class="blue-text text-center">You can sign in using your registered corporate email address with Reviewstar</p>
-              <div class="px-5">
-                <form class="pt-3">
-                  <input type="email" class="form-control login-input" placeholder="Work email address" id="organization-login-email">
-                  <input type="password" class="form-control login-input mt-4" placeholder="Password" id="organization-login-password">
-
-                  <div class="d-md-flex justify-content-between logged-in mt-2">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="organization-login-check">
-                      <label class="custom-control-label" for="organization-login-check">Keep me logged in</label>
-                    </div>
-
-                    <div><a href="#">Forgot password?</a></div>
-                  </div>
-
-                  <button type="submit" class="btn login-btn my-3">Log in</button>
-                </form>
-
-                <p class="no-account mb-1">Don't have an account? <a href="#" class="blue-text">Sign up</a></p>
-                <p class="no-account ">Register your organisation? <a href="#" class="blue-text">Get Listed</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Organizational Login Modal Ends-->
-
-      <!-- Individual Sign Up Starts here -->
-      <div class="modal fade" id="individual-signup" tabindex="-1" aria-labelledby="individual-signup" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h2 class="heading text-center">Join Stareview</h2>
-              <p class="blue-text text-center">Create your public profile by providing the following details</p>
-              <div class="px-5">
-                <form class="pt-4">
-                  <input type="text" class="form-control login-input" placeholder="Fullname" id="individual-signup-name" required>
-                  <input type="email" class="form-control login-input mt-4" placeholder="Email address" id="individual-signup-email" required>
-                  <input type="password" class="form-control login-input mt-4" placeholder="Password" id="individual-signup-password" required>
-                  <input type="password" class="form-control login-input mt-4" placeholder="Confirm password" id="individual-confirm-password" required>
-                  <input type="text" class="form-control login-input mt-4" placeholder="Phone number" id="individual-signup-phoneno" required>
-
-                  <div class="custom-control custom-checkbox logged-in mt-2">
-                    <input type="checkbox" class="custom-control-input" id="individual-signup-check">
-                    <label class="custom-control-label" for="individual-signup-check">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</label>
-                  </div>
-
-                  <button type="submit" class="btn login-btn my-3">Sign Up</button>
-                </form>
-
-                <p class="no-account mb-1">Already have an account? <a href="#" class="blue-text">Log in</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Individual Sign Up Ends here -->
-
-      <!-- Organization Sign Up Starts here -->
-      <div class="modal fade" id="organization-signup" tabindex="-1" aria-labelledby="organization-signup" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h2 class="heading text-center">Sign Up to Stareview</h2>
-              <p class="blue-text text-center">Create your organization profile by providing the following details</p>
-              <div class="px-5">
-                <form class="pt-4">
-                  <input type="text" class="form-control login-input" placeholder="Organization name" id="organization-signup-name" required>
-                  <input type="email" class="form-control login-input mt-4" placeholder="Email address" id="organization-signup-email" required>
-                  <input type="password" class="form-control login-input mt-4" placeholder="Password" id="organization-signup-password" required>
-                  <input type="password" class="form-control login-input mt-4" placeholder="Confirm password" id="organization-confirm-password" required>
-                  <input type="text" class="form-control login-input mt-4" placeholder="Phone number" id="organization-signup-phoneno" required>
-                  <input type="text" class="form-control login-input mt-4" placeholder="Website" id="organization-website">
-
-                  <div class="custom-control custom-checkbox logged-in mt-2">
-                    <input type="checkbox" class="custom-control-input" id="organization-signup-check">
-                    <label class="custom-control-label" for="organization-signup-check1">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</label>
-                  </div>
-
-                  <button type="submit" class="btn login-btn my-3">Sign Up</button>
-                </form>
-
-                <p class="no-account mb-1">Already have an account? <a href="#" class="blue-text">Log in</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Individual Sign Up Ends here -->
-
-
-
-
-      <!-- Login and SignUp Modals -->
 
     </div>
   </section>
@@ -298,6 +131,100 @@
 
       </div>
 
+      <div id="recent-reviews" class="mb-5">
+        <h4 class="heading text-center mb-4">Your recent searches</h4>
+        <div class="searches">
+          <div class="card shadow-sm py-3">
+            <div class="card-body">
+              <div class="d-flex">
+                <img src="images/titan.png" alt="Logo" class="img-fluid banks-logo">
+                <h6 class="ml-2 heading">Titan Trust Bank Limited</h6>
+              </div>
+              <div class="row py-3 ml-1">
+                <span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle"></span>
+                  <span class="far fa-circle"></span>
+                </span>
+
+                <span class="num-review ml-xl-3">43 reviews</span>
+              </div>
+              <p class="review-address">Victoria Island, Lagos</p>
+              <p class="review-address">Last reviewed : 12/12/2020</p>
+            </div>
+          </div>
+
+
+          <div class="card shadow-sm py-3">
+            <div class="card-body">
+              <div class="d-flex">
+                <img src="images/globus.png" alt="Logo" class="img-fluid banks-logo">
+                <h6 class="ml-2 heading">Globus Bank Limited</h6>
+              </div>
+              <div class="row py-3 ml-1">
+                <span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle"></span>
+                  <span class="far fa-circle"></span>
+                </span>
+              
+                <span class="num-review ml-xl-3">43 reviews</span>
+              </div>
+              <p class="review-address">Victoria Island, Lagos</p>
+              <p class="review-address">Last reviewed : 12/12/2020</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm shadaow-sm py-3">
+            <div class="card-body">
+              <div class="d-flex">
+                <img src="images/access.png" alt="Logo" class="img-fluid banks-logo">
+                <h6 class="ml-2 heading">Access Bank <br/> Plc</h6>
+              </div>
+              <div class="row py-3 ml-1">
+                <span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle checked"></span>
+                  <span class="far fa-circle"></span>
+                </span>
+              
+                <span class="num-review ml-xl-3">100 reviews</span>
+              </div>
+              <p class="review-address">Victoria Island, Lagos</p>
+              <p class="review-address">Last reviewed : 12/12/2020</p>
+            </div>
+          </div>
+
+          <div class="card reviews-card shadow-sm py-3">
+            <div class="card-body">
+              <div class="d-flex">
+                <img src="images/sterling.png" alt="Logo" class="img-fluid banks-logo">
+                <h6 class="ml-2 heading">Sterling Bank <br /> Plc</h6>
+              </div>
+            <div class="row py-3 ml-1">
+              <span>
+                <span class="far fa-circle checked"></span>
+                <span class="far fa-circle checked"></span>
+                <span class="far fa-circle checked"></span>
+                <span class="far fa-circle"></span>
+                <span class="far fa-circle"></span>
+              </span>
+            
+              <span class="num-review ml-xl-3">60 reviews</span>
+            </div>
+              <p class="review-address">Victoria Island, Lagos</p>
+              <p class="review-address">Last reviewed : 12/12/2020</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <div id="recent-reviews">
         <h4 class="heading text-center mb-4">Recent reviews</h4>

@@ -1,0 +1,147 @@
+:root {
+  --blue-background: #00296B;
+  --yellow-background: #F7AF4D;
+  --blue-color: #003F88;
+  --faint-text-color: #A0A3BD;
+  --gray-text: #10243D;
+}
+.body {
+  overflow-x: hidden;
+}
+
+.search-input {
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+}
+.search-input::placeholder {
+  color: #fff !important;
+}
+.search-group {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+  padding: 5px 20px !important;
+  border-radius: 3px !important;
+}
+.banking, .banking a {
+  color: var(--faint-text-color) !important;
+}
+.best {
+  color: var(--blue-background);
+  font-weight: bold;
+}
+.top-rated {
+  color: var(--blue-color);
+}
+.searches a:hover {
+  text-decoration: none !important;
+}
+.description {
+  color: var(--gray-text) !important;
+}
+.share {
+  color: var(--blue-background);
+}
+.bold-text {
+  font-weight: bold;
+}
+.address {
+  border-right: 2px solid #acacac;
+  padding-right: 10px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--yellow-background);
+}
+.ash-dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  background: transparent;
+  border: 3px solid var(--faint-text-color);
+}
+.checked-dot {
+  background: var(--yellow-background) !important;
+}
+.write-review {
+  background: var(--blue-background) !important;
+  color: #fff;
+  border: none;
+  padding: 13px 30px;
+}
+#main-content {
+  padding-bottom: 20px !important;
+}
+.website {
+  color: var(--gray-text);
+  font-size: 14px;
+  font-weight: 500;
+}
+.rate {
+  color: var(--gray-text);
+  font-weight: 600;
+}
+.rating {
+  font-size: 14px;
+  color: var(--gray-text);
+}
+.rating-score {
+  font-size: 2.8rem !important;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.rating-review {
+  color: var(--gray-text);
+}
+.about {
+  color: var(--gray-text);
+}
+.about p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.desc {
+  color: #000;
+}
+.reviewer-name {
+  font-weight: 600;
+  color: var(--gray-text);
+}
+.review-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-text);
+}
+.review-message {
+  color: var(--gray-text);
+  font-size: 14px;
+}
+.reply-container {
+  background-color: #F7F7FC;
+  border-left: 4px solid var(--blue-background);
+  width: 95%;
+}
+.reply-icon {
+  color: var(--faint-text-color);
+}
+.reply-title {
+  font-size: 14px;
+  color: var(--gray-text);
+  font-weight: bold;
+}
+.reply-message {
+  font-size: 14px;
+  color: var(--gray-text);
+}
+
+@media only screen
+and (max-device-width : 600px) {
+  .write-review {
+    padding: 13px 20px;
+  }
+}
