@@ -17,7 +17,7 @@
   <section id="navigation">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark header-nav">
-        <a class="navbar-brand stareview-logo" href="#">Stareview</a>
+        <a class="navbar-brand stareview-logo" href="index.html">Stareview</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,9 @@
                 <img src="images/user.png" height="40px" width="40px" class="img-fluid"> Floyd Miles
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#individual-login"><i class="fas fa-user mr-2"></i>My profile</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
+                <a class="dropdown-item login-option-2" href="review-stats.html"><i class="fas fa-user mr-2"></i>My profile</a>
+                <a class="dropdown-item login-option-2" href="myreviews.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
+                <a class="dropdown-item login-option-2" href="index.html"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
               </div>
             </li>
 
@@ -57,7 +57,7 @@
 
   <section id="breadcrumbs">
     <div class="container py-3">
-      <p class="my-2 banking">Banking<a href="user.html">
+      <p class="my-2 banking"><a href="reviews.html">Banking
         <i class="fas fa-chevron-right mx-2"></i></a>
         Titan Trust Bank Limited
       </p>
@@ -71,11 +71,13 @@
             <div class="col-md-10 col-12 description">
               <h2 class="best">Titan Trust Bank Limited</h2>
               <p class="my-3 rating">
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
+                <span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                </span>
 
                 <span class="bold-text mx-3">4.5 Rating</span>
                 <span><span class="bold-text">#10</span> of 251 Bank in Nigeria</span>
@@ -193,11 +195,13 @@
             <div class="col-11">
               <p class="reviewer-name mb-2">Esther Howard <span style="float: right; font-weight: 400;">Reviewed 5 days ago</span></p>
               <p>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
+                <span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
+                </span>
               </p>
               <h6 class="review-title">Thieves and gives the runaround</h6>
               <p class="review-message">Was charged by a company with an unauthorized transaction. Contacted azlo, and was told the merchant was correct in 
@@ -221,11 +225,13 @@
             <div class="col-11">
               <p class="reviewer-name mb-2">Devon Lane <span style="float: right; font-weight: 400;">Reviewed 5 days ago</span></p>
               <p>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
+                <span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                </span>
               </p>
               <h6 class="review-title">I wish my regular bank was this good.</h6>
               <p class="review-message">I wish my regular bank was this good.
@@ -250,6 +256,16 @@
             </div>
           </div>
 
+        </div>
+
+        <div id="pagination">
+          <div class="text-center">
+            <span class="page"><i class="fas fa-chevron-left"></i></span>
+            <span class="current-page">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="page"><i class="fas fa-chevron-right"></i></span>
+          </div>
         </div>
       </section>
       

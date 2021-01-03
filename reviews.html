@@ -17,7 +17,7 @@
   <section id="navigation">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark header-nav">
-        <a class="navbar-brand stareview-logo" href="#">Stareview</a>
+        <a class="navbar-brand stareview-logo" href="index.html">Stareview</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,9 @@
                 <img src="images/user.png" height="40px" width="40px" class="img-fluid"> Floyd Miles
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#individual-login"><i class="fas fa-user mr-2"></i>My profile</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
-                <a class="dropdown-item login-option-2" href="#" data-toggle="modal" data-target="#organization-login"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
+                <a class="dropdown-item login-option-2" href="review-stats.html"><i class="fas fa-user mr-2"></i>My profile</a>
+                <a class="dropdown-item login-option-2" href="myreviews.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
+                <a class="dropdown-item login-option-2" href="index.html"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
               </div>
             </li>
 
@@ -57,16 +57,202 @@
 
   <section id="breadcrumbs">
     <div class="container py-3">
-      <p class="my-2 banking"><a href="user.html"><i class="fas fa-chevron-left mr-2"></i></a>Banking</p>
+      <p class="my-2 banking"><a href="index.html"><i class="fas fa-chevron-left mr-2"></i></a>Banking</p>
       <h2 class="best">Best in Bank</h2>
       <p class="top-rated">Top-rated banks</p>
     </div>
   </section>
 
+
   <section id="main-content">
     <div class="container py-5">
-      <div id="recent-reviews" class="mb-5">
-        <h4 class="heading mb-4">Recent search</h4>
+
+
+      <div class="row pb-5">
+        <div class="col-md-4 col-lg-3">
+          <div class="bg-white p-3 rounded">
+            <h5 class="mb-2 categories">Categories</h5>
+            <div class="">
+              <input type="checkbox" id="commercial-banks">
+              <label for="commercial-banks">Commercial banks</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="merchant-banks">
+              <label for="merchant-banks">Merchant banks</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="development-banks">
+              <label for="development-banks">Development banks</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="savings-bank">
+              <label for="savings-bank">Savings banks</label>
+            </div>
+            <a href="" class="show-more">Show more <i class="fas fa-caret-down pl-2"></i></a>
+
+            <hr />
+
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-3 categories">Filters</h5>
+              <p class="reset">Reset Filters</p>
+            </div>
+
+            <input type="text" class="apply form-control" id="search-input" placeholder="City or Zip code">
+            <button class="btn apply-btn mt-2">Apply</button>
+
+            <hr />
+
+            <h5 class="mb-3 categories">No of reviews</h5>
+            <div class="">
+              <input type="checkbox" id="all-time">
+              <label for="all-time">All time</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="25plus">
+              <label for="25plus">25+</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="50plus">
+              <label for="50plus">50+</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="100plus">
+              <label for="100plus">100+</label>
+            </div>
+            <a href="" class="show-more">Show more <i class="fas fa-caret-down pl-2"></i></a>
+            
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 mt-3 mt-md-0 banks">
+          <a href="bank.html">
+            <div class="bg-white p-3 p-lg-5 rounded">
+              <div class="row">
+                <div class="col-lg-2 col-3">
+                  <img src="images/titan-logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-10 col-9">
+                  <h5 class="blue-text">Titan Trust Bank Limited</h5>
+                  <div class="row py-3 ml-1">
+                    <span class="mr-3">
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot"></span>
+                    </span>
+                    <span class="rating-num mr-3">4.0 rating</span>
+                    <span class="review-num">43 reviews</span>
+                  </div>
+                  <p class="rating-num">Bank <i class="fas fa-circle px-1" style="font-size: 5px;"></i> <span>Financial Institution</span></p>
+                  <p class="rating-num">1680 Sanusi Fafunwa St, Victoria Island, Lagos</p>
+  
+                </div>
+              </div>
+  
+            </div>
+          </a>
+
+
+         <a href="bank.html">
+          <div class="bg-white p-3 p-lg-5 rounded mt-5">
+            <div class="row">
+              <div class="col-lg-2 col-3">
+                <img src="images/citibank.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-10 col-9">
+                <h5 class="blue-text">Citibank Nigeria Limited</h5>
+                <div class="row py-3 ml-1">
+                  <span class="mr-3">
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot"></span>
+                  </span>
+                  <span class="rating-num mr-3">4.8 rating</span>
+                  <span class="review-num">65 reviews</span>
+                </div>
+                <p class="rating-num">Bank <i class="fas fa-circle px-1" style="font-size: 5px;"></i> <span>Financial Institution</span></p>
+                <p class="rating-num">1 Idowu Taylor St, Victoria Island, Lagos</p>
+
+              </div>
+            </div>
+
+          </div>
+         </a>
+          
+          <a href="bank.html">
+            <div class="bg-white p-3 p-lg-5 rounded mt-5">
+              <div class="row">
+                <div class="col-lg-2 col-3">
+                  <img src="images/zenith.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-10 col-9">
+                  <h5 class="blue-text">Zenith Bank</h5>
+                  <div class="row py-3 ml-1">
+                    <span class="mr-3">
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot"></span>
+                    </span>
+                    <span class="rating-num mr-3">4.5 rating</span>
+                    <span class="review-num">43 reviews</span>
+                  </div>
+                  <p class="rating-num">Bank <i class="fas fa-circle px-1" style="font-size: 5px;"></i> <span>Financial Institution</span></p>
+                  <p class="rating-num">Plot 6 Layi Yusuf Cresent Off Adiralty Road Lekki Penissula, Lagos</p>
+  
+                </div>
+              </div>
+  
+            </div>
+          </a>
+
+          <a href="bank.html">
+            <div class="bg-white p-3 p-lg-5 rounded mt-5">
+              <div class="row">
+                <div class="col-lg-2 col-3">
+                  <img src="images/lendigo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-10 col-9">
+                  <h5 class="blue-text">Lendigo</h5>
+                  <div class="row py-3 ml-1">
+                    <span class="mr-3">
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot checked-dot"></span>
+                      <span class="rate-dot"></span>
+                    </span>
+                    <span class="rating-num mr-3">4.0 rating</span>
+                    <span class="review-num">23 reviews</span>
+                  </div>
+                  <p class="rating-num">Merchant Bank <i class="fas fa-circle px-1" style="font-size: 5px;"></i> <span>Financial Institution</span></p>
+                  <p class="rating-num">Workbay 1st Floor, Lagos City Mall Onikan, Island 101231, Lagos</p>
+  
+                </div>
+              </div>
+  
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div id="pagination my-3">
+        <div class="text-center">
+          <span class="page"><i class="fas fa-chevron-left"></i></span>
+          <span class="current-page">1</span>
+          <span class="page">2</span>
+          <span class="page">3</span>
+          <span class="page"><i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+
+
+      <div id="recent-reviews" class="my-5">
+        <h4 class="heading mb-4">Recent Search</h4>
         <div class="searches">
           <a href="bank.html">
             <div class="card shadow-sm py-3">
@@ -77,11 +263,11 @@
                 </div>
                 <div class="row py-3 ml-1">
                   <span>
-                    <span class="far fa-circle checked"></span>
-                    <span class="far fa-circle checked"></span>
-                    <span class="far fa-circle checked"></span>
-                    <span class="far fa-circle"></span>
-                    <span class="far fa-circle"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot checked-dot"></span>
+                    <span class="rate-dot"></span>
+                    <span class="rate-dot"></span>
                   </span>
   
                   <span class="num-review ml-xl-3">43 reviews</span>
@@ -101,11 +287,11 @@
               </div>
               <div class="row py-3 ml-1">
                 <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
-                  <span class="far fa-circle"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
                 </span>
               
                 <span class="num-review ml-xl-3">43 reviews</span>
@@ -123,11 +309,11 @@
               </div>
               <div class="row py-3 ml-1">
                 <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
                 </span>
               
                 <span class="num-review ml-xl-3">100 reviews</span>
@@ -145,11 +331,11 @@
               </div>
             <div class="row py-3 ml-1">
               <span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot"></span>
+                <span class="rate-dot"></span>
               </span>
             
               <span class="num-review ml-xl-3">60 reviews</span>
@@ -173,11 +359,11 @@
               </div>
               <div class="row py-3 ml-1">
                 <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
-                  <span class="far fa-circle"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
                 </span>
 
                 <span class="num-review ml-xl-3">43 reviews</span>
@@ -196,11 +382,11 @@
               </div>
               <div class="row py-3 ml-1">
                 <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
-                  <span class="far fa-circle"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
                 </span>
               
                 <span class="num-review ml-xl-3">43 reviews</span>
@@ -218,11 +404,11 @@
               </div>
               <div class="row py-3 ml-1">
                 <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot checked-dot"></span>
+                  <span class="rate-dot"></span>
+                  <span class="rate-dot"></span>
                 </span>
               
                 <span class="num-review ml-xl-3">100 reviews</span>
@@ -240,11 +426,11 @@
               </div>
             <div class="row py-3 ml-1">
               <span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot checked-dot"></span>
+                <span class="rate-dot"></span>
+                <span class="rate-dot"></span>
               </span>
             
               <span class="num-review ml-xl-3">60 reviews</span>

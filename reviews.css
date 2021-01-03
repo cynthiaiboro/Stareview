@@ -7,8 +7,11 @@
 }
 .body {
   overflow-x: hidden;
+  font-family: sans-serif !important;
 }
-
+a:hover {
+  text-align: none !important;
+}
 .search-input {
   background: transparent !important;
   border: none !important;
@@ -49,13 +52,21 @@
   border-right: 2px solid #acacac;
   padding-right: 10px;
 }
+.rate-dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  background: transparent;
+  border: 3px solid var(--yellow-background);
+}
 .dot {
   height: 12px;
   width: 12px;
   border-radius: 50%;
   display: inline-block;
   background: transparent;
-  border: 2px solid var(--yellow-background);
+  border: 3px solid var(--yellow-background);
 }
 .ash-dot {
   height: 18px;
@@ -137,6 +148,96 @@
 .reply-message {
   font-size: 14px;
   color: var(--gray-text);
+}
+.page:hover {
+  color: #F7F7FC;
+  cursor: pointer;
+}
+.current-page {
+  background-color: var(--blue-background);
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 2px;
+  margin: 3px;
+}
+.page {
+  background-color: #fff;
+  padding: 5px 12px;
+  color: var(--faint-text-color);
+  border-radius: 2px;
+  margin: 3px;
+}
+.no-reviews {
+  font-size: 24px;
+  color: var(--blue-color);
+  font-weight: bold;
+}
+.stats {
+  color: var(--blue-color);
+}
+.review-info {
+  font-size: 11px;
+  color: var(--blue-color);
+}
+.review-message {
+  font-size: 17px;
+  color: var(--blue-color);
+  font-weight: bold;
+}
+.review-actions {
+  color: var(--faint-text-color);
+  font-size: 14px;
+}
+input[type="checkbox"] {
+  border: 2px solid var(--blue-background) !important;
+}
+input[type="checkbox"]:focus{
+  outline:0 !important;
+  box-shadow: none !important;
+  border: var(--blue-background) !important;
+}
+.apply-btn {
+  background: var(--yellow-background) !important;
+  color: #fff !important;
+  font-size: 14px;
+  padding: 5px 20px !important;
+}
+.rating-num {
+  font-size: 14px;
+  color: var(--gray-text);
+}
+.review-num {
+  font-size: 14px;
+  color: var(--faint-text-color);
+}
+.show-more {
+  color: var(--gray-text);
+  font-size: 13px;
+  font-weight: 500;
+}
+.show-more:hover {
+  color: var(--gray-text);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--gray-text);
+}
+.categories {
+  font-size: 18px;
+}
+.reset {
+  font-size: 13px;
+  color: var(--faint-text-color);
+}
+.apply {
+  padding: 25px !important;border: 1px solid var(--faint-text-color) !important;
+}
+.apply::placeholder {
+  color: var(--faint-text-color) !important;
+}
+.banks a:hover {
+  text-decoration: none !important;
+}
+.banking a:hover {
+  text-decoration: none !important;
 }
 
 @media only screen
