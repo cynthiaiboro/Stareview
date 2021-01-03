@@ -26,8 +26,9 @@ a:hover {
   padding: 5px 20px !important;
   border-radius: 3px !important;
 }
-.banking, .banking a {
+.banking, .banking a:hover {
   color: var(--faint-text-color) !important;
+  text-decoration: none !important;
 }
 .best {
   color: var(--blue-background);
