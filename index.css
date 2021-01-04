@@ -247,10 +247,13 @@ overflow-x: auto;
 }
 
 .footer-logo {
-  color: var(--blue-background);
+  color: var(--blue-background) !important;
   font-size: 2rem;
   margin-bottom: 30px;
   font-weight: 700;
+}
+.footer-logo:hover {
+  text-decoration: none !important;
 }
 .footer-desc {
   font-size: 12px;
