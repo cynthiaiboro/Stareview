@@ -136,10 +136,10 @@ a:hover {
 .reply-container {
   background-color: #F7F7FC;
   border-left: 4px solid var(--blue-background);
-  width: 95%;
+  /* width: 95%; */
 }
 .commentbox {
-  width: 95%;
+  display: none;
 }
 .reply-icon {
   color: var(--faint-text-color);

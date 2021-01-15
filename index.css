@@ -191,7 +191,7 @@ button:focus {
 }
 .carousel-control-next {
   opacity: 1 !important;
-  left: 90% !important;
+  left: 92% !important;
 }
 .carousel-item {
   transition: transform .6s ease-in-out !important;
@@ -299,7 +299,7 @@ overflow-x: auto;
 @media (min-width: 768px) {
 
     /* show 3 items */
-    .carousel-inner .active,
+    /* .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
@@ -325,29 +325,29 @@ overflow-x: auto;
         right: -25%;
         display: block;
         visibility: visible;
-    }
+    } */
     
     /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    /* .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
         visibility: visible;
-    }
+    } */
     
     /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
+    /* .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
         left: 0;
         display: block;
         visibility: visible;
-    }
+    } */
     
     /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    /* .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carousel-item-prev.carousel-item-right + .carousel-item,
     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
@@ -358,7 +358,7 @@ overflow-x: auto;
     }
     .centered {
       font-size: 1.5rem;
-    }
+    } */
 
 }
 
