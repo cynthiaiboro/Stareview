@@ -20,3 +20,19 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         }
     }
 });
+function showCommentBox() {
+    var x = document.getElementById("commentBox");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+function showCommentBox2() {
+    var x = document.getElementById("commentBox2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}

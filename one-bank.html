@@ -34,7 +34,7 @@
               </div>
             </li>
             <li class="nav-item mr-5">
-              <a href="reviews.html" class="nav-link">Write a review</a>
+              <a href="banks.html" class="nav-link">Write a review</a>
             </li>
             <li class="nav-item mr-4 dropdown">
               <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -43,7 +43,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item login-option-2" href="review-stats.html"><i class="fas fa-user mr-2"></i>My profile</a>
-                <a class="dropdown-item login-option-2" href="myreviews.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
+                <a class="dropdown-item login-option-2" href="mybanks.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
                 <a class="dropdown-item login-option-2" href="index.html"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
               </div>
             </li>
@@ -57,7 +57,7 @@
 
   <section id="breadcrumbs">
     <div class="container py-3">
-      <p class="my-2 banking"><a href="reviews.html">Banking
+      <p class="my-2 banking"><a href="banks.html">Banking
         <i class="fas fa-chevron-right mx-2"></i></a>
         Titan Trust Bank Limited
       </p>
@@ -100,10 +100,10 @@
   </section>
 
   <section id="main-content">
-    <div class="container my-4">
+    <div class="container my-1">
       <div class="row rating-review">
-        <div class="col-md-6 col-12 mb-3">
-          <div class="bg-white p-4 shadow-sm">
+        <div class="col-md-6 col-12 mb-3 pr-0">
+          <div class="bg-white p-4 shadow-sm mr-1">
             <h4>Ratings and review</h4>
             <h2 class="rating-score mt-4">4.5</h2>
             <span class="dot checked-dot"></span>
@@ -116,8 +116,8 @@
           </div>
 
         </div>
-        <div class="col-md-6 col-12">
-          <div class="bg-white p-4 shadow-sm">
+        <div class="col-md-6 col-12 pl-0">
+          <div class="bg-white p-4 shadow-sm ml-1">
             <h6 class="mb-4">RATINGS</h6>
             <p class="rating"><i class="fas fa-briefcase mr-2"></i>Integrity
               <span style="float: right;">
@@ -156,8 +156,8 @@
         </div>
       </div>
 
-      <div class="bg-white my-5 shadow-sm about">
-        <div class="p-5">
+      <div class="bg-white mb-3 shadow-sm about">
+        <div class="py-5 px-4">
           <h5 class="">About Titan Trust Bank Limited</h5>
           <p class="desc my-4">We are your reliable partners in creating tailored products and services that fit your evolving lifestyle.</p>
 
@@ -187,7 +187,7 @@
       </div>
 
       <section id="all-reviews">
-        <div class="bg-white my-5">
+        <div class="bg-white my-3">
           <div class="row p-4">
             <div class="col-1">
               <img src="images/esther.png" class="profile img-fluid">
@@ -209,15 +209,21 @@
                 Horrible company and horrible experience.
               </p>
               <p class="rating">
+                <span class="mr-5 reply-comment" onclick="showCommentBox()"><i class="fas fa-share mr-2"></i>Reply</span>
                 <span class="mr-5"><i class="fas fa-thumbs-up mr-2"></i> Useful</span>
                 <span><i class="fas fa-share-alt mr-3"></i>Share</span>
                 <span style="float: right;"><i class="fas fa-flag"></i></span>
               </p>
+
+              <div id="commentBox" class="commentbox">
+                <textarea class="form-control login-input" id="comment" rows="3" placeholder="Reply to this comment"></textarea>
+                <button class="write-review mt-2 float-right rounded py-2 px-3" >Post reply</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-white my-5">
+        <div class="bg-white mb-5">
           <div class="row p-4">
             <div class="col-1">
               <img src="images/devon.png" class="profile img-fluid">
@@ -239,6 +245,7 @@
                 card out lightnig fast... Highly recommend.
               </p>
               <p class="rating">
+                <span class="mr-5 reply-comment" onclick="showCommentBox2()"><i class="fas fa-share mr-2"></i>Reply</span>
                 <span class="mr-5"><i class="fas fa-thumbs-up mr-2"></i> Useful</span>
                 <span><i class="fas fa-share-alt mr-3"></i>Share</span>
                 <span style="float: right;"><i class="fas fa-flag"></i></span>
@@ -252,6 +259,11 @@
                   </span>
                 </p>
                 <p class="ml-4 pl-2 reply-message">We're so happy to hear it! We're looking forward to continuing to work together!</p>
+              </div>
+
+              <div id="commentBox2" class="commentbox my-2">
+                <textarea class="form-control login-input" id="comment" rows="3" placeholder="Reply to this comment"></textarea>
+                <button class="write-review mt-2 float-right rounded py-2 px-3" >Post reply</button>
               </div>
             </div>
           </div>
@@ -289,36 +301,68 @@
                 </div>
               </div>
 
-              <h6 class="rate mb-3">Rate Your Experience</h6>
+              <h6 class="rated mb-3">Rate Your Experience</h6>
 
               <p class="website"><i class="fas fa-briefcase mr-2"></i>Integrity
-                <span style="float: right;">
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
+                <span class="integrity-widget" style="float: right;">
+                  
+                  <input type="radio" name="rate" id="rate-5">
+                  <label for="rate-5" class="ash-dot"></label>
+
+                  <input type="radio" name="rate" id="rate-4">
+                  <label for="rate-4" class="ash-dot"></label>
+
+                  <input type="radio" name="rate" id="rate-3">
+                  <label for="rate-3" class="ash-dot"></label>
+
+                  <input type="radio" name="rate" id="rate-2">
+                  <label for="rate-2" class="ash-dot"></label>
+
+                  <input type="radio" name="rate" id="rate-1">
+                  <label for="rate-1" class="ash-dot"></label>
+                 
                 </span>
-  
               </p>
   
               <p class="website"><i class="fas fa-headset mr-2"></i>Support
-                <span style="float: right;">
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
+                <span class="support-widget" style="float: right;">
+                  
+                  <input type="radio" name="support-rate" id="rate-support-5">
+                  <label for="rate-support-5" class="ash-dot"></label>
+
+                  <input type="radio" name="support-rate" id="rate-support-4">
+                  <label for="rate-support-4" class="ash-dot"></label>
+
+                  <input type="radio" name="support-rate" id="rate-support-3">
+                  <label for="rate-support-3" class="ash-dot"></label>
+
+                  <input type="radio" name="support-rate" id="rate-support-2">
+                  <label for="rate-support-2" class="ash-dot"></label>
+
+                  <input type="radio" name="support-rate" id="rate-support-1">
+                  <label for="rate-support-1" class="ash-dot"></label>
+                 
                 </span>
               </p>
   
               <p class="website"><i class="far fa-building mr-2"></i>Trust
-                <span style="float: right;">
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
-                  <span class="ash-dot"></span>
+                <span class="trust-widget" style="float: right;">
+                  
+                  <input type="radio" name="trust-rate" id="rate-trust-5">
+                  <label for="rate-trust-5" class="ash-dot"></label>
+
+                  <input type="radio" name="trust-rate" id="rate-trust-4">
+                  <label for="rate-trust-4" class="ash-dot"></label>
+
+                  <input type="radio" name="trust-rate" id="rate-trust-3">
+                  <label for="rate-trust-3" class="ash-dot"></label>
+
+                  <input type="radio" name="trust-rate" id="rate-trust-2">
+                  <label for="rate-trust-2" class="ash-dot"></label>
+
+                  <input type="radio" name="trust-rate" id="rate-trust-1">
+                  <label for="rate-trust-1" class="ash-dot"></label>
+                 
                 </span>
   
               </p>
@@ -326,7 +370,7 @@
               <div class="">
                 <form class="pt-4">
                   <div class="form-group">
-                    <label class="rate" for="exampleFormControlTextarea1">Tell us about your experience</label>
+                    <label class="rated" for="exampleFormControlTextarea1">Tell us about your experience</label>
                     <textarea class="form-control login-input" id="write-review-input" rows="3" placeholder="Share your experience"></textarea>
                   </div>
                   
@@ -414,7 +458,7 @@
     </div>
   </section>
 
-
+  <script src="index.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

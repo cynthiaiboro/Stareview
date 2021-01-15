@@ -94,7 +94,7 @@ a:hover {
   font-size: 14px;
   font-weight: 500;
 }
-.rate {
+.rated {
   color: var(--gray-text);
   font-weight: 600;
 }
@@ -136,6 +136,9 @@ a:hover {
 .reply-container {
   background-color: #F7F7FC;
   border-left: 4px solid var(--blue-background);
+  width: 95%;
+}
+.commentbox {
   width: 95%;
 }
 .reply-icon {
@@ -239,6 +242,87 @@ input[type="checkbox"]:focus{
 }
 .banking a:hover {
   text-decoration: none !important;
+}
+#commentBox {
+  display: none;
+}
+.reply-comment:hover {
+  cursor: pointer;
+  color: var(--faint-text-color);
+}
+
+.integrity-widget input{
+  display: none;
+}
+.integrity-widget label{
+  transition: all 0.2s ease;
+}
+.integrity-widget input:not(:checked) ~ label:hover,
+.integrity-widget input:not(:checked) ~ label:hover ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.integrity-widget input:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.integrity-widget input#rate-5:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+  text-shadow: 0 0 16px red;
+}
+.support-widget input{
+  display: none;
+}
+.support-widget label{
+  transition: all 0.2s ease;
+}
+.support-widget input:not(:checked) ~ label:hover,
+.support-widget input:not(:checked) ~ label:hover ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.support-widget input:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.support-widget input#rate-support-5:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+  text-shadow: 0 0 16px red;
+}
+.trust-widget input{
+  display: none;
+}
+.trust-widget label{
+  transition: all 0.2s ease;
+}
+.trust-widget input:not(:checked) ~ label:hover,
+.trust-widget input:not(:checked) ~ label:hover ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.trust-widget input:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+}
+.trust-widget input#rate-trust-5:checked ~ label {
+  background-color: var(--yellow-background) !important;
+  border: 3px solid var(--yellow-background);
+  text-shadow: 0 0 16px red;
+}
+.right,
+.left {
+  height: 18px * 2;
+  width: 18px;
+}
+.left {
+  border-bottom-left-radius: 18px * 2;
+  border-top-left-radius: 18px * 2;
+}
+.right {
+  border-bottom-right-radius: 18px * 2;
+  border-top-right-radius: 18px * 2;
 }
 
 @media only screen

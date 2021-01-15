@@ -67,6 +67,15 @@ button:focus {
   color: var(--blue-color);
   font-weight: 500;
 }
+.all-recent {
+  color: var(--blue-color);
+}
+.all-recent:hover {
+  text-decoration: none;
+}
+.banks:hover {
+  text-decoration: none !important;
+}
 .login-input {
   background-color: #EFF0F7 !important;
   border: none !important;

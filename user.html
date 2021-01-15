@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-5 active">
-              <a href="reviews.html" class="nav-link">Write a review</a>
+              <a href="banks.html" class="nav-link">Write a review</a>
             </li>
             <li class="nav-item mr-4 dropdown">
               <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -34,7 +34,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item login-option-2" href="review-stats.html"><i class="fas fa-user mr-2"></i>My profile</a>
-                <a class="dropdown-item login-option-2" href="myreviews.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
+                <a class="dropdown-item login-option-2" href="mybanks.html"><i class="far fa-newspaper mr-2"></i></i>My reviews</a>
                 <a class="dropdown-item login-option-2" href="index.html"><i class="fas fa-sign-in-alt mr-2"></i>Sign out</a>
               </div>
             </li>
@@ -80,52 +80,64 @@
         <h4 class="heading mb-4">Browse by category</h4>
         <div class="row">
           <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/banks.svg">
-                <p class="card-text category-title">Banks</a>
+            <a href="banks.html">
+              <div class="bg-white category-cards" style="width: 9rem;">
+                <div class="category-card-body text-center">
+                  <img src="images/banks.svg">
+                  <p class="card-text category-title">Banks</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/investment.svg">
-                <p class="card-text category-title">Investment</a>
+          <div class="col-md-2 col-4 m-3 m-lg-0 browse">
+            <a href="banks.html">
+              <div class="card category-cards" style="width: 9rem;">
+                <div class="card-body category-card-body text-center">
+                  <img src="images/investment.svg">
+                  <p class="card-text category-title">Investment</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/transportation.svg">
-                <p class="card-text category-title">Transportation</a>
+          <div class="col-md-2 col-4 m-3 m-lg-0 browse">
+            <a href="banks.html">
+              <div class="card category-cards" style="width: 9rem;">
+                <div class="card-body category-card-body text-center">
+                  <img src="images/transportation.svg">
+                  <p class="card-text category-title">Transportation</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/hospital.svg">
-                <p class="card-text category-title">Hospitals</a>
+          <div class="col-md-2 col-4 m-3 m-lg-0 browse">
+            <a href="banks.html">
+              <div class="card category-cards" style="width: 9rem;">
+                <div class="card-body category-card-body text-center">
+                  <img src="images/hospital.svg">
+                  <p class="card-text category-title">Hospitals</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/hotel.svg">
-                <p class="card-text category-title">Hotels</a>
+          <div class="col-md-2 col-4 m-3 m-lg-0 browse">
+            <a href="banks.html">
+              <div class="card category-cards" style="width: 9rem;">
+                <div class="card-body category-card-body text-center">
+                  <img src="images/hotel.svg">
+                  <p class="card-text category-title">Hotels</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-2 col-4 m-3 m-lg-0">
-            <div class="card category-cards" style="width: 9rem;">
-              <div class="card-body category-card-body text-center">
-                <img src="images/more.svg">
-                <p class="card-text category-title">More</a>
+          <div class="col-md-2 col-4 m-3 m-lg-0 browse">
+            <a href="banks.html">
+              <div class="card category-cards" style="width: 9rem;">
+                <div class="card-body category-card-body text-center">
+                  <img src="images/more.svg">
+                  <p class="card-text category-title">More</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -134,35 +146,86 @@
       <div id="recent-reviews" class="mb-5">
         <h4 class="heading text-center mb-4">Your recent searches</h4>
         <div class="searches">
-          <div class="card shadow-sm py-3">
-            <div class="card-body">
-              <div class="d-flex">
-                <img src="images/titan.png" alt="Logo" class="img-fluid banks-logo">
-                <h6 class="ml-2 heading">Titan Trust Bank Limited</h6>
+          <a href="one-bank.html" class="banks">
+            <div class="card shadow-sm py-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/titan.png" alt="Logo" class="img-fluid banks-logo">
+                  <h6 class="ml-2 heading">Titan Trust Bank Limited</h6>
+                </div>
+                <div class="row py-3 ml-1">
+                  <span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle"></span>
+                    <span class="far fa-circle"></span>
+                  </span>
+  
+                  <span class="num-review ml-xl-3">43 reviews</span>
+                </div>
+                <p class="review-address">Victoria Island, Lagos</p>
+                <p class="review-address">Last reviewed : 12/12/2020</p>
               </div>
-              <div class="row py-3 ml-1">
-                <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
-                  <span class="far fa-circle"></span>
-                </span>
-
-                <span class="num-review ml-xl-3">43 reviews</span>
-              </div>
-              <p class="review-address">Victoria Island, Lagos</p>
-              <p class="review-address">Last reviewed : 12/12/2020</p>
             </div>
-          </div>
+          </a>
 
 
-          <div class="card shadow-sm py-3">
-            <div class="card-body">
-              <div class="d-flex">
-                <img src="images/globus.png" alt="Logo" class="img-fluid banks-logo">
-                <h6 class="ml-2 heading">Globus Bank Limited</h6>
+          <a href="one-bank.html" class="banks">
+            <div class="card shadow-sm py-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/globus.png" alt="Logo" class="img-fluid banks-logo">
+                  <h6 class="ml-2 heading">Globus Bank Limited</h6>
+                </div>
+                <div class="row py-3 ml-1">
+                  <span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle"></span>
+                    <span class="far fa-circle"></span>
+                  </span>
+                
+                  <span class="num-review ml-xl-3">43 reviews</span>
+                </div>
+                <p class="review-address">Victoria Island, Lagos</p>
+                <p class="review-address">Last reviewed : 12/12/2020</p>
               </div>
+            </div>
+          </a>
+
+          <a href="one-bank.html" class="banks">
+            <div class="card shadow-sm shadaow-sm py-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/access.png" alt="Logo" class="img-fluid banks-logo">
+                  <h6 class="ml-2 heading">Access Bank <br/> Plc</h6>
+                </div>
+                <div class="row py-3 ml-1">
+                  <span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle checked"></span>
+                    <span class="far fa-circle"></span>
+                  </span>
+                
+                  <span class="num-review ml-xl-3">100 reviews</span>
+                </div>
+                <p class="review-address">Victoria Island, Lagos</p>
+                <p class="review-address">Last reviewed : 12/12/2020</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="one-bank.html" class="banks">
+            <div class="card reviews-card shadow-sm py-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/sterling.png" alt="Logo" class="img-fluid banks-logo">
+                  <h6 class="ml-2 heading">Sterling Bank <br /> Plc</h6>
+                </div>
               <div class="row py-3 ml-1">
                 <span>
                   <span class="far fa-circle checked"></span>
@@ -172,57 +235,18 @@
                   <span class="far fa-circle"></span>
                 </span>
               
-                <span class="num-review ml-xl-3">43 reviews</span>
+                <span class="num-review ml-xl-3">60 reviews</span>
               </div>
-              <p class="review-address">Victoria Island, Lagos</p>
-              <p class="review-address">Last reviewed : 12/12/2020</p>
+                <p class="review-address">Victoria Island, Lagos</p>
+                <p class="review-address">Last reviewed : 12/12/2020</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="card shadow-sm shadaow-sm py-3">
-            <div class="card-body">
-              <div class="d-flex">
-                <img src="images/access.png" alt="Logo" class="img-fluid banks-logo">
-                <h6 class="ml-2 heading">Access Bank <br/> Plc</h6>
-              </div>
-              <div class="row py-3 ml-1">
-                <span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle checked"></span>
-                  <span class="far fa-circle"></span>
-                </span>
-              
-                <span class="num-review ml-xl-3">100 reviews</span>
-              </div>
-              <p class="review-address">Victoria Island, Lagos</p>
-              <p class="review-address">Last reviewed : 12/12/2020</p>
-            </div>
-          </div>
+        </div>
 
-          <div class="card reviews-card shadow-sm py-3">
-            <div class="card-body">
-              <div class="d-flex">
-                <img src="images/sterling.png" alt="Logo" class="img-fluid banks-logo">
-                <h6 class="ml-2 heading">Sterling Bank <br /> Plc</h6>
-              </div>
-            <div class="row py-3 ml-1">
-              <span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle checked"></span>
-                <span class="far fa-circle"></span>
-                <span class="far fa-circle"></span>
-              </span>
-            
-              <span class="num-review ml-xl-3">60 reviews</span>
-            </div>
-              <p class="review-address">Victoria Island, Lagos</p>
-              <p class="review-address">Last reviewed : 12/12/2020</p>
-            </div>
-          </div>
-
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#" class="text-center mt-4 all-recent">See all recent searches</a>
         </div>
       </div>
 
