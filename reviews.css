@@ -120,6 +120,19 @@ a:hover {
 .desc {
   color: #000;
 }
+.circle-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-card {
+  background-image: url("images/circle.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ratings-card {
+  height: 300px;
+}
 .reviewer-name {
   font-weight: 600;
   color: var(--gray-text);
@@ -140,6 +153,11 @@ a:hover {
 }
 .commentbox {
   display: none;
+}
+.ratings-card {
+  border-top: 3px solid var(--blue-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .reply-icon {
   color: var(--faint-text-color);
